@@ -115,3 +115,18 @@ function timeColor() {
   }
 }
 timeColor();
+
+
+function notes9 {
+    var textarea9 = document.getElementById('notes9').textContent;
+    var newTextarea9 = document.getElementById('notes9').textContent;
+    var save9 = document.getElementById('btn9');
+
+    newTextarea9.textContent= localStorage.getItem('notes')
+
+    save9.onclick = function saveNotes {
+        localStorage.setItem('note', textarea9.textContent)
+    }
+    
+
+}
