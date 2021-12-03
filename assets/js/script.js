@@ -116,17 +116,24 @@ function timeColor() {
 }
 timeColor();
 
+// function notes9() {
+//   var textarea9 = document.getElementById("notes9").textContent;
+//   var newTextarea9 = document.getElementById("notes9").textContent;
+//   var save9 = document.getElementById("btn9");
 
-function notes9 {
-    var textarea9 = document.getElementById('notes9').textContent;
-    var newTextarea9 = document.getElementById('notes9').textContent;
-    var save9 = document.getElementById('btn9');
+//   save9.onclick = function saveNotes() {
+//     localStorage.setItem("note", textarea9.textContent);
+//   };
 
-    newTextarea9.textContent= localStorage.getItem('notes')
+// }
 
-    save9.onclick = function saveNotes {
-        localStorage.setItem('note', textarea9.textContent)
-    }
-    
+function saveNote9() {
+  var textarea9 = document.querySelector("#notes9").textContent;
+  var save9 = document.querySelector("#btn9");
 
+  save9.addEventListener("mouseup", saveN9);
+
+  function saveN9() {
+    window.localStorage.setItem("notes9", textarea9);
+  }
 }
