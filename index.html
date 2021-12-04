@@ -26,89 +26,160 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p class="lead">Current Date: <span id="currentDT"></span></p>
+      <p class="lead">Current Date & Time: <span id="currentDT"></span></p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <table class="table table-bordered">
+
+      <table class="table-bordered">
         <tr class="row">
-          <th class="col-2">Time</th>
-          <th class="col-8">Task notes</th>
-          <th class="col-2">Save</th>
+          <th class="col-2 time-block">Time</th>
+          <th class="col-8 taskNotes">Task notes</th>
+          <th class="col-2 save">Save</th>
         </tr>
 
         <tr id="timeSlot9" class="row">
-          <td id="9" class="time col-2">9:00 AM</td>
-          <td id="notes9" class="taskNotes col-8">
-            <input type="text" id="taskForm9" />
+          <td id="9" class="time-block col-2">9:00 AM</td>
+          <td class="taskNotes col-8">
+            <textarea
+              name="notes"
+              id="notes9"
+              cols="40"
+              rows="2"
+              class="textarea"
+            ></textarea>
           </td>
-          <td id="save9" class="save col-2"></td>
+          <td class="save col-2">
+            <button id="btn9" class="saveBtn fas fa-lock"></button>
+          </td>
         </tr>
 
         <tr id="timeSlot10" class="row">
-          <td id="10" class="time col-2">10:00 AM</td>
-          <td id="notes10" class="taskNotes col-8">
-            <input type="text" id="taskForm10" />
+          <td id="10" class="time-block col-2">10:00 AM</td>
+          <td class="taskNotes col-8">
+            <textarea
+              name="notes"
+              id="notes10"
+              cols="40"
+              rows="2"
+              class="textarea"
+            ></textarea>
           </td>
-          <td id="save10" class="save col-2">
-            <img src="./assets/images/lock-solid.svg" alt="" />
+          <td class="save col-2">
+            <button id="btn10" class="saveBtn fas fa-lock"></button>
           </td>
         </tr>
 
         <tr id="timeSlot11" class="row">
-          <td id="11" class="time col-2">11:00 AM</td>
-          <td id="notes11" class="taskNotes col-8">
-            <input type="text" id="taskForm11" />
+          <td id="11" class="time-block col-2">11:00 AM</td>
+          <td class="taskNotes col-8">
+            <textarea
+              name="notes"
+              id="notes11"
+              cols="40"
+              rows="2"
+              class="textarea"
+            ></textarea>
           </td>
-          <td id="save11" class="save col-2"></td>
+          <td class="save col-2">
+            <button id="btn11" class="saveBtn fas fa-lock"></button>
+          </td>
         </tr>
 
         <tr id="timeSlot12" class="row">
-          <td id="12" class="time col-2">12:00 AM</td>
-          <td id="notes12" class="taskNotes col-8">
-            <input type="text" id="taskForm12" />
+          <td id="12" class="time-block col-2">12:00 AM</td>
+          <td class="taskNotes col-8">
+            <textarea
+              name="notes"
+              id="notes12"
+              cols="40"
+              rows="2"
+              class="textarea"
+            ></textarea>
           </td>
-          <td id="save12" class="save col-2"></td>
+          <td class="save col-2">
+            <button id="btn12" class="saveBtn fas fa-lock"></button>
+          </td>
         </tr>
 
         <tr id="timeSlot13" class="row">
-          <td id="13" class="time col-2">1:00 PM</td>
-          <td id="notes13" class="taskNotes col-8">
-            <input type="text" id="taskForm13" />
+          <td id="13" class="time-block col-2">1:00 PM</td>
+          <td class="taskNotes col-8">
+            <textarea
+              name="notes"
+              id="notes13"
+              cols="40"
+              rows="2"
+              class="textarea"
+            ></textarea>
           </td>
-          <td id="save13" class="save col-2"></td>
+          <td class="save col-2">
+            <button id="btn13" class="saveBtn fas fa-lock"></button>
+          </td>
         </tr>
 
         <tr id="timeSlot14" class="row">
-          <td id="14" class="time col-2">2:00 PM</td>
-          <td id="notes14" class="taskNotes col-8">
-            <input type="text" id="taskForm14" />
+          <td id="14" class="time-block col-2">2:00 PM</td>
+          <td class="taskNotes col-8">
+            <textarea
+              name="notes"
+              id="notes14"
+              cols="40"
+              rows="2"
+              class="textarea"
+            ></textarea>
           </td>
-          <td id="save14" class="save col-2"></td>
+          <td class="save col-2">
+            <button id="btn14" class="saveBtn fas fa-lock"></button>
+          </td>
         </tr>
 
         <tr id="timeSlot15" class="row">
-          <td id="15" class="time col-2">3:00 PM</td>
-          <td id="notes15" class="taskNotes col-8">
-            <input type="text" id="taskForm15" />
+          <td id="15" class="time-block col-2">3:00 PM</td>
+          <td class="taskNotes col-8">
+            <textarea
+              name="notes"
+              id="notes15"
+              cols="40"
+              rows="2"
+              class="textarea"
+            ></textarea>
           </td>
-          <td id="save15" class="save col-2"></td>
+          <td class="save col-2">
+            <button id="btn15" class="saveBtn fas fa-lock"></button>
+          </td>
         </tr>
 
         <tr id="timeSlot16" class="row">
-          <td id="16" class="time col-2">4:00 PM</td>
-          <td id="notes16" class="taskNotes col-8">
-            <input type="text" id="taskForm16" />
+          <td id="16" class="time-block col-2">4:00 PM</td>
+          <td class="taskNotes col-8">
+            <textarea
+              name="notes"
+              id="notes16"
+              cols="40"
+              rows="2"
+              class="textarea"
+            ></textarea>
           </td>
-          <td id="save16" class="save col-2"></td>
+          <td class="save col-2">
+            <button id="btn16" class="saveBtn fas fa-lock"></button>
+          </td>
         </tr>
 
         <tr id="timeSlot17" class="row">
-          <td id="17" class="time col-2">5:00 PM</td>
-          <td id="notes17" class="taskNotes col-8">
-            <input type="text" id="taskForm17" />
+          <td id="17" class="time-block col-2">5:00 PM</td>
+          <td class="taskNotes col-8">
+            <textarea
+              name="notes"
+              id="notes17"
+              cols="40"
+              rows="2"
+              class="textarea"
+            ></textarea>
           </td>
-          <td id="save17" class="save col-2"></td>
+          <td class="save col-2">
+            <button id="btn17" class="saveBtn fas fa-lock"></button>
+          </td>
         </tr>
       </table>
     </div>
